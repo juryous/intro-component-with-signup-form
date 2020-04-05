@@ -7,7 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -16,7 +17,7 @@
 <body>
 
   <div class="container">
-    <div class="left">
+    <div class="left inner">
       <h1>Learn to code by watching others</h1>
       <p>
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
@@ -24,16 +25,19 @@
       </p>
     </div>
 
-    <div class="right">
-      <h2>Try it free 7 days then $20/mo. thereafter</h2>
+    <div class="right inner">
+      <h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
 
-      <form action="submit">
-
+      <form id="form">
+        <input class="input" type="text" placeholder="First Name">
+        <input class="input" type="text" placeholder="Last Name">
+        <input class="input" type="email" placeholder="Email Adress">
+        <input class="input" type="password" placeholder="Password">
+        <button id="btn" class="input">Claim your free trial</button>
+        <p>
+          By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </p>
       </form>
-
-      <button>Claim your free trial</button>
-
-      <small>By clicking the button, you are agreeing to our Terms and Services</small>
     </div>
 
   </div>

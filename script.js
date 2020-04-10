@@ -33,6 +33,7 @@ form.addEventListener('submit', (event) => {
     } else {
         removeError('password');
     }
+    
 });
 
 const addError = (input, msg) => {
@@ -48,7 +49,7 @@ const removeError = input => {
     inputBox.classList.remove('error');
 }
 
-function validEmail(email) {
-    var regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+const validEmail = email => {
+    var regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
     return regex.test(String(email).toLocaleLowerCase());
 }

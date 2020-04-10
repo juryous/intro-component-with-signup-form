@@ -76,12 +76,12 @@ h2 span {
     margin: 10px auto;
     border: 1px solid lightgray;
     border-radius: 6px;
+    padding-left: 35px;
 }
 
 input::placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    padding-left: 35px;
 }
 
 #btn {
@@ -93,7 +93,9 @@ input::placeholder {
     letter-spacing: 0.09rem;
     text-transform: uppercase;
     border: none;
-    box-shadow: 0 3px 2px hsl(154, 58%, 42%);
+    padding: 0;
+    /* margin: 10px auto; */
+    box-shadow: 0 4px 2px hsl(154, 58%, 42%);
 }
 
 #form p {
@@ -107,4 +109,42 @@ input::placeholder {
 #form p span {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+small {
+    display: none;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.input-box {
+    margin-right: 5px;
+    text-align: right;
+    position: relative;
+}
+
+.input-box img {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    opacity: 0;
+}
+
+.input-box.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+    margin-bottom: 5px;
+}
+
+.input-box.error input::placeholder {
+    color: transparent;
+}
+
+.input-box.error img {
+    opacity: 1;
+}
+
+.input-box.error small {
+    display: block;
 }

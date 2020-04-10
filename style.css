@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
@@ -146,4 +146,64 @@ input::placeholder {
 
 .input-box.error small {
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .inner {
+        max-width: 375px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 0.85rem;
+        padding: 18px 50px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    #form {
+        padding: 20px 15px;
+    }
+
+    .input-box {
+        margin-bottom: 15px;
+    }
+
+    .input {
+        padding: 15px 25px;
+    }
+
+    .input-box img {
+        top: 15px;
+        right: 20px;
+    }
+
+    #btn {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    #terms {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    #terms div {
+        margin: 0 auto;
+        max-width: 250px;
+    }
 }

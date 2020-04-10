@@ -202,8 +202,4 @@ input::placeholder {
         text-align: center;
     }
 
-    #terms div {
-        margin: 0 auto;
-        max-width: 250px;
-    }
 }
